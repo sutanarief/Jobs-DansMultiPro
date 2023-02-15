@@ -1,13 +1,15 @@
 import { Heading, Flex } from '@chakra-ui/react'
 import React from 'react'
+import Header from '../components/Header'
+import Home from '../pages/Home'
 
 const Layout = () => {
   return (
     <Flex
-      bg="white"
       m={4}
+      direction="column"
     >
-      <Heading>Hello</Heading>
+      <Home />
     </Flex>
   )
 }
