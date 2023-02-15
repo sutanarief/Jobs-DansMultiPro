@@ -1,15 +1,19 @@
 import { Flex, Input, Button } from '@chakra-ui/react'
 import React, { useState } from 'react'
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth'
+import { auth } from '../../firebase/clientApp'
 
-const Login = () => {
+const Login = ({ toggleModal }) => {
   const [loginForm, setLoginForm] = useState({
     email: "",
     password: ""
   })
 
+  const [signInWithEmailAndPassword, user, loading, error] = useSignInWithEmailAndPassword(auth)
+
   const onSubmit = (e) => {
     e.preventDefault()
-    console.log(loginForm)
+    signInWithEmailAndPassword(loginForm.email, loginForm.password)
   }
 
   const onChange = (e) => {

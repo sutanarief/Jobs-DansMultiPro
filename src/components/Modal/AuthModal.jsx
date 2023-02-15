@@ -52,8 +52,8 @@ const AuthModal = ({ isOpen, toggleModal, title }) => {
             </Button>
             <Text color="gray.500" fontWeight={700}>OR</Text>
 
-            {title === "Login" && <Login />}
-            {title === "Sign Up" && <SignUp />}
+            {title === "Login" && <Login toggleModal={toggleModal}/>}
+            {title === "Sign Up" && <SignUp toggleModal={toggleModal}/>}
           </Flex>
         </ModalBody>
       </ModalContent>
