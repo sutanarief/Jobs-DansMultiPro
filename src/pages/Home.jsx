@@ -75,7 +75,7 @@ const Home = () => {
   return (
     <>
     <Header setListData={setListData} setNoMore={setNoMore} setCurrentPage={setCurrentPage}/>
-    <DetailModal isOpen={isOpen} onClose={setIsOpen}/>
+    <DetailModal isOpen={isOpen} onClose={setIsOpen} data={detailData}/>
       <Flex
         justify="center"
         width="100%"
