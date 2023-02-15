@@ -25,7 +25,7 @@ export const Button = {
         bg: "blue.400"
       },
     },
-    signout: {
+    signup: {
       color: "blue.500",
       bg: "white",
       _hover: {
