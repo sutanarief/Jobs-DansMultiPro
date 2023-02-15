@@ -24,9 +24,9 @@ const Login = () => {
       direction="column"
       align="center"
       width="100%"
-      mt={4}
+      mt={2}
     >
-      <form onSubmit={onSubmit} style={{width: "90%"}}>
+      <form onSubmit={onSubmit} style={{width: "100%"}}>
         <Input
         required
         name="email"
